@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de boletos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Definimos una función llamada cambiarImagen que toma dos parámetros: 
+        // 'imagen' (la URL de la nueva imagen) y 'id' (el ID del elemento <img> que se quiere cambiar).
+        function cambiarImagen(imagen, id) {
+            // Utilizamos document.getElementById para obtener el elemento <img> 
+            // que tiene el ID proporcionado y cambiamos su atributo 'src' 
+            // a la nueva URL de la imagen.
+            document.getElementById(id).src = imagen;
+        }
+    </script>
+</head>
+
+<body>
+    <header> <!-- Creamos el header done vamos a colocar el menu de navegacion  -->
+        <div class="menuNavegacion">
+            <nav>
+                <ul> <!-- Creamos una lista en donde colocaremos los elemntos del menu de navegacion -->
+                    <!-- Utilizamos li para crear un elemento de la lista y le agregamos un a para colocar un enlace de un pagina a la que redireccionara  -->
+                    <li><a href="TheWeeknd.html">The Weeknd</a></li>
+                    <li> <a href="ImageneDragons.html">Imagine Dragons</a></li>
+                    <li><a href="ArianaGrande.html">Ariana Grande</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><br>
+    <h1 class="tituloInicio">Inicio</h1><br> 
+    <section class="boletos"> 
+        <div class="artistas"> 
+            <h2 class="TituloSecundario">THE WEEKND</h2> 
+            <img id="imagenTheWeeknd" src="img/TheWeeknd1.png"  
+                 onmouseover="cambiarImagen('img/TheWeeknd2.png', 'imagenTheWeeknd')" 
+                 onmouseout="cambiarImagen('img/TheWeeknd1.png', 'imagenTheWeeknd')" 
+                 alt="Imagen de The Weeknd"> <!-- Cramos una etiqueta img para colocar la imagen que queremos mostar y luego llamamos a lafuncion del script para que cambie al pasar el mouse-->
+            <p class="descripcion">El fenómeno de la música contemporánea, The Weeknd, conocido por su estilo innovador y sus emotivas baladas, 
+                llegará a Chicago para un espectáculo exclusivo. Con hits como "Blinding Lights" y "Save Your Tears", 
+                promete una noche llena de ritmo y pasión.</p> 
+            <p><strong>Precio de entrada general: 39.99$</strong></p><br>
+            <h3 class="TituloSecundario">Canción mas popular del artista:</h3><br>
+            <video controls src="video/The Weeknd - Save Your Tears (Official Music Video) - TheWeekndVEVO (144p, h264, youtube).mp4"></video> <br> <br>
+            <a href="TheWeeknd.html" target="_blank">Mas informacion</a> 
+        </div>
+        <div class="artistas">
+            <h2 class="TituloSecundario">IMAGENE DRAGONS</h2>
+            <img id="imagenImageneDragons" src="img/ImageneDragons1.jpg" 
+                 onmouseover="cambiarImagen('img/ImageneDragons2.jpg', 'imagenImageneDragons')" 
+                 onmouseout="cambiarImagen('img/ImageneDragons1.jpg', 'imagenImageneDragons')" 
+                 alt="Imagen de Imagene Dragons">
+            <p class="descripcion">La banda número 1 de rock, Imagine Dragons, se presentará en el estadio de Chicago este 10 de octubre, 
+                trayendo su energía electrizante y éxitos como "Believer" y "Radioactive" a los fanáticos. ¡No te pierdas esta experiencia musical inolvidable!</p>
+            <p><strong>Precio de entrada general: 29.99$</strong></p><br>
+            <h3 class="TituloSecundario">Canción mas popular del artista:</h3><br>
+            <video controls src="video/Imagine Dragons - Believer (Official Music Video) - ImagineDragonsVEVO (144p, h264, youtube).mp4"></video> <br> <br>
+            <a href="ImageneDragons.html" target="_blank">Mas informacion</a>
+        </div>
+        <div class="artistas">
+            <h2 class="TituloSecundario">ARIANA GRANDE</h2>
+            <img id="imagenArianaGrande" src="img/ArianaGrande1.jfif" 
+                 onmouseover="cambiarImagen('img/ArianaGrande2.png', 'imagenArianaGrande')" 
+                 onmouseout="cambiarImagen('img/ArianaGrande1.jfif', 'imagenArianaGrande')" 
+                 alt="Imagen de Ariana Grande">
+            <p class="descripcion">La poderosa voz de Ariana Grande iluminará el escenario en Chicago con su inconfundible estilo pop y R&B. 
+                Con éxitos como "Thank U, Next" y "7 rings", su actuación será un viaje emocional que no querrás perderte.</p>
+            <p><strong>Precio de entrada general: 39.99$</strong></p><br>
+            <h3 class="TituloSecundario">Canción mas popular del artista:</h3><br>
+            <video controls src="video/Ariana Grande ft. Nicki Minaj - Side To Side (Official Video) ft. Nicki Minaj - ArianaGrandeVevo (144p, h264, youtube).mp4"></video> <br><br>
+            <a href="ArianaGrande.html" target="_blank">Mas informacion</a>
+        </div>
+    </section> <br>
+    <footer> 
+        <p>&copy; Este sitio web fue realizado por Josmar Osorio.</p>
+    </footer>
+</body>
+</html>

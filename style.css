@@ -1,0 +1,155 @@
+*{
+    margin: 0; /* Establece que el margen de toda la pagina sea de 0  */
+    font-family: DS PF DIN Max,PF DIN Max,sans-serif; /* Cambia el tipo de fuente de la pagina */
+}
+
+body{
+    min-width: 675px; /* establece un tamaño maximo al que se puede reducir la pagina */
+    text-align: center;
+}
+
+section{
+    margin: 10px; /* Añade un margen a todos los sections */
+}
+
+header {
+    background-color: #3a5a40; /* Establece el color de fondo del encabezado */
+    width: 100%; /* Establece el ancho del encabezado al 100% */
+    display: table; /* Establece el elemento como una tabla para centrar horizontalmente y para que asi los elementos no se salgan del encabezado si se vu elve mas pequeño el formato*/
+}
+
+body{
+    background-image: url(img/Fondo.jpg);
+}
+
+.menuNavegacion {
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+    font-size: 20px;
+}
+
+nav{
+    float: right; /* Hace que los elementos floten a la derecha y se coloquen uno al lado del otro */
+}
+
+.menuNavegacion li {
+    list-style: none; /* Elimina los estilos de lista */
+    margin-left: 15px; /* Establece el margen izquierdo de los elementos de la lista */
+    padding: 20px 0; /* Establece el relleno superior e inferior de los elementos de la lista */
+    float: left; /* Hace que los elementos floten a la izquierda y se coloquen uno al lado del otro */
+    margin: 20px;
+}
+
+.menuNavegacion li a {
+    text-decoration: none; /* Elimina la decoración de texto subrayado */
+    color: white; /* Establece el color del texto en blanco */
+    padding: 15px 25px; /* Establece el tamaño del contorno de la sombra y del contenido */
+}
+
+.menuNavegacion li a:hover {
+    background-color:  rgba(0, 0, 0, 0.856); /* Agrega una sombra al pasar el mouse por el enlace */
+}
+
+.tituloInicio {
+    margin: 20px auto; /* Margen vertical de 20 píxeles y horizontal automático */
+    background-color: #dad7cd;
+    display: inline-block; /* El contenedor sólo ocupa el espacio necesario */
+    text-align: center; /* Centra el texto dentro del h1 */
+    padding: 10px; /* Añade espacio alrededor del texto */
+    border-radius: 10%;
+    color: #3a5a40;
+}
+
+.TituloSecundario{
+    color: #3a5a40;
+}
+
+.boletos{
+    display: grid; /* Establece que los elementos dentro de la clase estaran en disposicion grid */
+    grid-template-columns: repeat(3,1fr); /* Establece que en esta clase habran 3 columnas que ocuparan 1 fragmento de la pantalla cada una */
+    gap: 20px; /* Añade margenes de 20px al rededor de todos los div */
+}
+
+.artistas{
+    background-color: rgb(224, 224, 224);
+}
+
+.boletos div:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Establece una sombra al rededor del div */
+}
+
+.boletos div{
+        text-align: center; 
+        box-shadow: none; /* Establece una sombra inicialmente */
+        transition: box-shadow 0.3s; /* establece un tiempo de 0,3 segundos para que aparezca por completo la sombra al rededor del div */
+        height: 1050px;
+}
+
+.boletos div img{
+    width: 80%; /* establece que la imagen va a ocupar el 80% del div */
+    border-radius: 10px; /* redondea las orillas de las imagenes */
+    margin: 5px 0px; /* establece un margen arriba y abajo de las imagenes  */
+    max-height: 500px;
+    min-height: 400px;
+}
+
+.boletos div p, .boletos div h2, .boletos div a{
+    padding: 15px; /* establece un padding de 15px para los p,h2,a dentro del div */
+}
+
+.descripcion{
+    text-align: center; /* establece el texto en el centro del div */
+}
+
+.boletos div a{
+    font-size: 12px; /* establece el tamaño de la fuente en 12px */
+    text-decoration: none; /* elimina la decoracion de los links */
+    color: inherit; /* Establece un color neutro para el texto de los links */
+    background-color:#dad7cd; /* Añade un color de fondo al boton */
+    padding: 10px 15px; /* Añade un relleno al rededor dle texto del boton */
+    border: 1px solid black; /* Establece un borde al boton */
+    border-radius: 10px; /* Establece una curva a las esquinas del boton */
+    margin: 10px; /* Establece un margen alrededor del boton */
+}
+
+.boletos div video{
+    width: 400px;
+}
+
+.informacionArtista {
+    background-color: #dad7cd;
+}
+
+.imagenes-artista {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio debajo de la sección */
+}
+
+.imagenes-artista h2 {
+    margin-bottom: 15px; /* Espacio debajo del título */
+    color: #333; /* Color del texto del título */
+}
+
+.imagenes-container {
+    display: flex; /* Cambia a flexbox para asegurarte de que las imágenes estén en una fila */
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+}
+
+.shows {
+    flex: 1; /* Cada imagen ocupará el mismo espacio */
+    margin: 15px; /* Espacio lateral entre las imágenes */
+    max-width: 30%; /* Limita el ancho máximo de cada imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: añade sombra a las imágenes */
+    height: 400px;
+}
+
+footer {
+    background-color: #3a5a40; /* Establece el color de fondo del pie de página */
+}
+
+footer p {
+    padding: 20px;
+    text-align: center; /* Centra el texto del pie de página */
+    color: white; /* Establece el color del texto en blanco */
+}
